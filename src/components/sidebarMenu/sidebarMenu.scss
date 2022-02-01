@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.sidebar {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  &__content {
+    .burger > * {
+      border-bottom: 3px solid $main-yellow;
+      width: 30px;
+      margin-top: 5px;
+    }
+    .burger {
+      position: relative;
+      z-index: 1000;
+      cursor: pointer;
+
+      .line-1 {
+        width: 50px;
+      }
+      .line-2 {
+        width: 30px;
+      }
+      .line-3 {
+        width: 40px;
+      }
+    }
+  }
+}

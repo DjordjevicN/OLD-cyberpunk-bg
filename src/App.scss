@@ -1,0 +1,45 @@
+@import "./styles/mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  .frame {
+    @include resp("800px") {
+      display: none;
+    }
+  }
+  #bgVid {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -1;
+  }
+  #bgVid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1b1b1b;
+    opacity: 0.8;
+  }
+
+  .pages {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+}

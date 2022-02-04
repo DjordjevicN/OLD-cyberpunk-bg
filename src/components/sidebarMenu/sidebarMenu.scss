@@ -21,10 +21,10 @@
         width: 50px;
       }
       .line-2 {
-        width: 30px;
+        width: 50px;
       }
       .line-3 {
-        width: 40px;
+        width: 50px;
       }
     }
     .menuLinks {
@@ -35,6 +35,7 @@
       width: 500px;
       justify-content: space-around;
       z-index: 100;
+      opacity: 0;
       a {
         text-decoration: none;
         color: $main-yellow;

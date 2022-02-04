@@ -15,6 +15,24 @@ body {
       display: none;
     }
   }
+  .bottomEdge {
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    svg {
+      width: 100%;
+    }
+  }
+  .leftEdge {
+    position: absolute;
+    top: -3px;
+
+    transform: rotate(180deg);
+    width: 100%;
+    svg {
+      width: 100%;
+    }
+  }
   #bgVid {
     position: absolute;
     width: 100%;

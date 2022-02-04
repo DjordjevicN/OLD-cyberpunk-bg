@@ -1,5 +1,6 @@
 import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { render } from "react-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
@@ -25,13 +26,10 @@ function App() {
       ></div>
       <SideMenu />
       <div className="pages">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="projects" element={<Projects />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
       </div>
     </div>
   );

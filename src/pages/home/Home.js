@@ -35,6 +35,7 @@ function Home() {
               >ĐORĐEVIĆ
           </motion.h6>
           </div>
+         
       </div>
   </AnimatePresence>
 </div >

@@ -17,14 +17,10 @@
       z-index: 1000;
       cursor: pointer;
 
-      .line-1 {
-        width: 50px;
-      }
+      .line-1,
+      .line-3,
       .line-2 {
-        width: 50px;
-      }
-      .line-3 {
-        width: 50px;
+        width: 30px;
       }
     }
     .menuLinks {

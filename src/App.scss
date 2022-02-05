@@ -10,26 +10,20 @@ body {
 }
 
 .App {
-  .frame {
-    @include resp("800px") {
-      display: none;
-    }
-  }
   .bottomEdge {
     position: absolute;
-    bottom: -3px;
+    bottom: -4px;
     width: 100%;
-    svg {
+    img {
       width: 100%;
     }
   }
-  .leftEdge {
+  .topEdge {
     position: absolute;
-    top: -3px;
-
+    top: -4px;
     transform: rotate(180deg);
     width: 100%;
-    svg {
+    img {
       width: 100%;
     }
   }

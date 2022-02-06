@@ -1,3 +1,8 @@
+
+
+![alt text](https://raw.githubusercontent.com/DjordjevicN/portfolio-2022-cyberpunk-bg/main/assets/cyberpunk_portfolio_2022.png)
+![alt text](https://raw.githubusercontent.com/DjordjevicN/portfolio-2022-cyberpunk-bg/main/assets/cyberpunk_portfolio_2022-about.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

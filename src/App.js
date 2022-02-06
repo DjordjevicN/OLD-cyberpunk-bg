@@ -3,7 +3,9 @@ import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
-import Projects from "./pages/projects/Projects";
+// import Projects from "./pages/projects/Projects";
+// import Projects from "./pages/project-page/Projects";
+import ProjectGallery from "./pages/projectGallery/ProjectGallery";
 import SideMenu from "./components/sidebarMenu/SidebarMenu";
 import video from "./components/video/2.mp4";
 
@@ -31,7 +33,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/projects" element={<Projects />} /> */}
+          <Route path="/projects" element={<ProjectGallery />} />
         </Routes>
       </div>
     </div>

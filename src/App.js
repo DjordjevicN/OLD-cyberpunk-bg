@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 // import Projects from "./pages/projects/Projects";
 // import Projects from "./pages/project-page/Projects";
+// import Projects from "./pages/project-page/Projects";
 import ProjectGallery from "./pages/projectGallery/ProjectGallery";
 import SideMenu from "./components/sidebarMenu/SidebarMenu";
 import video from "./components/video/2.mp4";

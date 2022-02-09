@@ -1,26 +1,11 @@
 import React from "react";
 import "./Projects.scss";
-import { MdPlayArrow } from "react-icons/md";
 
 function Projects() {
   const projects = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
     <div className="projects">
-      {/* <div className="scroll">
-        <div className="arrow arrow1">
-          <MdPlayArrow />
-        </div>
-        <div className="arrow arrow2">
-          <MdPlayArrow />
-        </div>
-        <div className="arrow arrow3">
-          <MdPlayArrow />
-        </div>
-        <div className="arrow arrow4">
-          <MdPlayArrow />
-        </div>
-      </div> */}
       <div className="projects__content">
         {projects.map((project) => {
           return (

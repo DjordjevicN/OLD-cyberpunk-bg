@@ -5,16 +5,7 @@
   display: grid;
   place-items: center;
   position: relative;
-  .scroll {
-    position: absolute;
-    bottom: 40px;
-    transform: rotate(90deg);
-    // animation: arrows 1s infinite;
-    .arrow {
-      font-size: 30px;
-      color: $main-yellow;
-    }
-  }
+
   &__content {
     margin-top: 50px;
     max-width: 1200px;
@@ -32,6 +23,7 @@
             width: 100%;
           }
           .textBox {
+            text-align: left;
             margin-top: 20px;
             h3 {
               margin-bottom: 10px;
@@ -57,16 +49,5 @@
     .project:not(:first-child) {
       margin-top: 160px;
     }
-  }
-}
-@keyframes arrows {
-  0% {
-    bottom: 40px;
-  }
-  50% {
-    bottom: 0px;
-  }
-  100% {
-    bottom: 40px;
   }
 }

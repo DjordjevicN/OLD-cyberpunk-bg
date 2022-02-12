@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./sidebarMenu.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function SidebarMenu() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 5000);
+  }, []);
 
   const burger = {
     open: { rotate: -90 },
@@ -75,6 +81,7 @@ function SidebarMenu() {
     closed: {
       opacity: 0,
       x: 30,
+      display: "none",
       transition: {
         delay: 0.25,
         duration: 0.2,

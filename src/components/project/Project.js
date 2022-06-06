@@ -3,14 +3,22 @@ import "./Project.scss";
 
 function Project({
   title,
-  text,
+  tech,
+  mainText,
   image,
   githubLink,
+  githubLink2,
+  githubLinkBtnText,
+  githubLink2BtnText,
   visitLink,
-  extraLink,
-  buttonTitle,
-  tech,
+  visitLinkBtnText,
+  visitLink2,
+  visitLink2BtnText,
 }) {
+  console.log(visitLink !== undefined);
+
+  const data = `https://api.glovoapp.com/v3/stores/mcdonald`;
+
   return (
     <div className="project">
       <div className="project__content">
@@ -22,25 +30,29 @@ function Project({
                 <h2>{title}</h2>
               </div>
               <div className="text">
-                <p>{text}</p>
+                <p>{mainText}</p>
                 <p className="tech">{`Tech: ${tech}`}</p>
               </div>
             </div>
             <div className="right">
               {githubLink && (
                 <div className="button">
-                  <a href={githubLink}>GITHUB</a>
+                  <a href={githubLink}>{githubLinkBtnText}</a>
+                </div>
+              )}
+              {githubLink2 && (
+                <div className="button">
+                  <a href={githubLink2}>{githubLink2BtnText}</a>
                 </div>
               )}
               {visitLink && (
                 <div className="button">
-                  <a href={visitLink}>VISIT</a>
+                  <a href={visitLink}>{visitLinkBtnText}</a>
                 </div>
               )}
-
-              {extraLink && (
+              {visitLink2 && (
                 <div className="button">
-                  <a href={extraLink}>{buttonTitle}</a>
+                  <a href={visitLink2}>{visitLink2BtnText}</a>
                 </div>
               )}
             </div>
